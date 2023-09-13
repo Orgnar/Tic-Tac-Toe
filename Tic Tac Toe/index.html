@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jquery-3.6.0.min.js">
+</head>
+<body onload="unclickables()">
+    <div class="container-container" >
+        <div id="title">Tic Tac Toe</div>
+        
+         <div id="instruction">Press the 'Start' button to start the game'</div>
+
+        <div id="tictactoe-container">
+            <input type="text" class="ticbox" id="box1" readonly
+            onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box2" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box3" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box4" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box5" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box6" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box7" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box8" readonly onclick="tictac(this.id);">
+            <input type="text" class="ticbox" id="box9" readonly onclick="tictac(this.id);">
+        </div>
+
+        <button class="startbtn" onclick="startOrReset(this.getAttribute('class'));">Start</button>
+        <div class="score-box">
+            <div>Scores</div>
+            <div class="score-row">
+                <div>Player:</div>
+                <div id="player-score">0</div>
+            </div>
+            <div class="score-row">
+                <div>Bot:</div>
+                <div id="bot-score">0</div>
+            </div>
+        </div>
+
+    </div class="container-container">
+    <script src="script.js"></script>
+</body>
+</html>
